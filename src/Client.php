@@ -1,6 +1,6 @@
 <?php
 
-namespace OK\Client;
+namespace OK;
 
 /**
  * @method \OK\Actions\Apps getApps() Методы для работы с приложениями
@@ -31,24 +31,41 @@ namespace OK\Client;
  * @method \OK\Actions\Video getVideo() Методы для работы с видео
  * @method \OK\Actions\Widget getWidget() Методы для получения мобильных виджетов
  */
-class OkApiClient
+class Client
 {
 
-    private OKApiRequest $request;
 
-    public function __construct(string $application_key, string $app_secret_key)
-    {
-        $this->request = new OKApiRequest($application_key, $app_secret_key);
+    // private OKApiRequest $request;
+
+
+    public function __construct(array $config = []) {
+        $this->config = array_merge([
+
+        ], $config)
+
+
+
+        //  protected string $application_key,
+        // protected string $app_secret_key,
+        // protected string $redirect_uri
+
+        // $this->request = new OKApiRequest($application_key, $app_secret_key);
     }
 
-    public function getRequest(): OKApiRequest
-    {
-        return $this->request;
-    }
+    // public function getRequest(): OKApiRequest
+    // {
+    //     return $this->request;
+    // }
 
-    public function __call(string $name, array $arguments)
+    // public function __call(string $name, array $arguments)
+    // {
+    //     return new ("OK\Actions\\" . str_replace('get', '', $name))($this->request);
+    // }
+
+
+    public function FunctionName(Type $var = null)
     {
-        return new ("OK\Actions\\" . str_replace('get', '', $name))($this->request);
+        # code...
     }
 
 }

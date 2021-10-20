@@ -1,7 +1,7 @@
 {
     "name": "vadimushka/ok-php-sdk",
     "description": "OK PHP SDK",
-    "keywords": ["ok", "sdk"],
+    "keywords": ["ok", "sdk", "ok api", "ok php sdk"],
     "type": "library",
     "homepage": "https://github.com/Vadimushka/ok-php-sdk",
     "license": "MIT",
@@ -11,7 +11,7 @@
     },
     "autoload": {
         "psr-4": {
-            "OK\\": "src/OK"
+            "OK\\": "src/"
         }
     }
 }
