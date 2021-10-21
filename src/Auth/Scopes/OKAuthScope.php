@@ -1,5 +1,5 @@
 <?php
-namespace OK\OAuth\Scopes;
+namespace OK\Auth\Scopes;
 
 class OKAuthScope
 {
