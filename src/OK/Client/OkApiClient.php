@@ -27,6 +27,7 @@ use OK\Actions\Stream;
 use OK\Actions\Url;
 use OK\Actions\Users;
 use OK\Actions\Video;
+use OK\Actions\VkNotifications;
 use OK\Actions\Widget;
 
 class OkApiClient
@@ -48,6 +49,7 @@ class OkApiClient
     private $mediatopic;
     private $messagesV2;
     private $notifications;
+    private $vkNotifications;
     private $payment;
     private $photos;
     private $photosV2;
@@ -179,6 +181,14 @@ class OkApiClient
     public function getNotifications(): Notifications
     {
         return $this->notifications = $this->notifications ?? new Notifications($this->getRequest());
+    }
+
+    /**
+     * Методы для работы с нотификациями vk
+     */
+    public function getVkNotifications(): VkNotifications
+    {
+        return $this->vkNotifications = $this->vkNotifications ?? new VkNotifications($this->getRequest());
     }
 
     /**
