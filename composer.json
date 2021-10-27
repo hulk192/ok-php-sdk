@@ -1,9 +1,9 @@
 {
-    "name": "vadimushka/ok-php-sdk",
-    "description": "OK PHP SDK",
+    "name": "hulk192/ok-php-sdk",
+    "description": "OK PHP SDK Fork",
     "keywords": ["ok", "sdk"],
     "type": "library",
-    "homepage": "https://github.com/Vadimushka/ok-php-sdk",
+    "homepage": "https://github.com/hulk192/ok-php-sdk.git",
     "license": "MIT",
     "require": {
         "php": ">=7.1",
