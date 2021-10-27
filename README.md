@@ -13,5 +13,5 @@ PHP library for Ok API interaction, includes OAuth 2.0 authorization and API met
 The Ok PHP SDK can be installed using Composer by running the following command:
 
 ```sh
-composer require vadimushka/ok-php-sdk
+composer require hulk192/ok-php-sdk
 ```
