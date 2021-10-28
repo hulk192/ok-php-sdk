@@ -22,7 +22,7 @@ class VkNotifications {
     }
 
     public function sendMessage(string $access_token, array $params = []) {
-        $this->request->post('vk.notifications.sendMessage', $access_token, $params);
+        return $this->request->post('vk.notifications.sendMessage', $access_token, $params);
     }
 
 }
